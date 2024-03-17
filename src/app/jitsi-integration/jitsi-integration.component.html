@@ -1,0 +1,8 @@
+<div id="meet"  [style.display]="meetingModalVisibility?'block':'none'"></div>
+
+<button (click)="startMeeting()">Konferenciahívás indítása</button><br>
+<input type="text" [(ngModel)]="userName">
+<button (click)="apiCommand('displayName', userName)">Név módosítása</button><br>
+<button (click)="apiCommand('avatarUrl', 'http://localhost:4200/assets/avatar/20101123131216-1_0.jpg')">Avatár módosítása</button><br>
+<button (click)="stopMeeting()">Meeting bezárása</button><br>
+
